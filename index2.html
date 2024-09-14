@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Títulos do Palmeiras</title>
+    <head>       
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #E8F5E9;
+            color: #1B5E20;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1B5E20;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 40px 0;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        th {
+            background-color: #2E7D32;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #1B5E20;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        tr:hover {
+            background-color: #F1F8E9;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            background-color: #1B5E20;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #388E3C;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png" alt="Logo do Palmeiras" class="logo" width="100" height="100">
+            <h1>Títulos do Palmeiras</h1>
+        </header>
+        <div class="container">
+            <table>
+                <caption>Conquistas Históricas</caption>
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Competição</th>
+                        <th>Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fade-in">
+                        <td>1999</td>
+                        <td>Copa Libertadores</td>
+                        <td><img src="CopaLibertadores1999.jpeg" alt="Copa Libertadores 1999" width="200" height="200"></td>
+                    </tr>
+                    <tr class="fade-in">
+                        <td>2016</td>
+                        <td>Campeonato Brasileiro</td>
+                        <td><img src="brasileiro2016.jpg" alt="Campeonato Brasileiro 2016" width="200" height="200"></td>
+                    </tr>
+                    <tr class="fade-in">
+                        <td>2020</td>
+                        <td>Copa Libertadores</td>
+                        <td><img src="CopaLibertadores2020.jpg" alt="Copa Libertadores 2020" width="200" height="200"></td>
+                    </tr>
+                    <tr class="fade-in">
+                        <td>2021</td>
+                        <td>Copa Libertadores</td>
+                        <td><img src="CopaLibertadores2021.jpg" alt="Copa Libertadores 2021" width="200" height="200"></td>
+                    </tr>
+                    <tr class="fade-in">
+                        <td>2023</td>
+                        <td>Campeonato Brasileiro</td>
+                        <td><img src="brasileirao2023.jpg" alt="Campeonato Brasileiro 2023" width="200" height="200"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="index.html" class="back-button">Voltar ao Site Principal</a>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const rows = document.querySelectorAll('tbody tr');
+                rows.forEach((row, index) => {
+                    row.style.opacity = '0';
+                    setTimeout(() => {
+                        row.classList.add('fade-in');
+                    }, 200 * index);
+                });
+            });
+        </script>
+    </body>
+</html>

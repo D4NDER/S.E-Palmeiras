@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.E Palmeiras</title>
+    <head>
+    <style>
+    
+    :root {
+        --primary-color: #006400;
+        --secondary-color: #a4ea4f;
+        --text-color: #333;
+        --background-color: #f0f8f0;
+        --header-text-color: #FFD700; 
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 150px;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        color: var(--header-text-color); /* Change header text color */
+    }
+
+    header p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    nav {
+        background-color: var(--secondary-color);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    section {
+        background-color: white;
+        margin: 2rem auto;
+        max-width: 1000px;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .player-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .player-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .player-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .player-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .player-info {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .player-info h3 {
+        margin: 0;
+        color: var(--primary-color);
+    }
+
+    .img-container {
+        text-align: center;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 1rem 0;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .btn-top {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-top: 1rem;
+    }
+
+    .btn-top:hover {
+        background-color: #004d00;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem;
+        background-color: var(--primary-color);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header id="inicio">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1200px-Palmeiras_logo.svg.png" alt="Logo Palmeiras" width="100" height="100">
+        <h1>Sociedade Esportiva Palmeiras</h1>
+        <p>O Time Mais Forte Do Brasil</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#estadio">Estádio</a></li>
+            <li><a href="#elenco">Elenco</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="index2.html">Títulos</a></li>
+        </ul>
+    </nav>
+
+    <section id="apresentacao">
+        <h1>Bem-vindo ao Mundo Alviverde</h1>
+        <p>A Sociedade Esportiva Palmeiras, carinhosamente conhecida como "Verdão", é um dos clubes mais vitoriosos e tradicionais do futebol brasileiro. Com uma história centenária repleta de glórias, o Palmeiras se destaca por sua constante busca pela excelência e pelo seu incomparável espírito de luta.</p>
+        <p>Fundado em 1914, o clube já conquistou inúmeros títulos nacionais e internacionais, incluindo Campeonatos Brasileiros, Copas do Brasil, Libertadores da América e a Copa Rio de 1951, considerada por muitos como o primeiro Mundial de Clubes. Com uma torcida apaixonada e fiel, o Palmeiras continua a escrever sua história de sucesso, sempre em busca de novas conquistas.</p>
+    </section>
+
+    <section id="estadio">
+        <h1>Allianz Parque</h1>
+        <div class="img-container">
+            <img src="allianzparque.jpg" alt="Allianz Parque" width="800" height="450">
+        </div>
+        <p>O Allianz Parque é a casa moderna e imponente do Palmeiras, considerada a principal arena multiuso da América Latina. Inaugurada em 2014, no centenário do clube, esta arena está localizada no coração de São Paulo, no mesmo terreno que abrigou por mais de um século o histórico Parque Antarctica e posteriormente o Estádio Palestra Italia.</p>
+        <p>Com capacidade para mais de 43 mil torcedores em jogos de futebol e até 55 mil pessoas em shows, o Allianz Parque representa um marco na história do Palmeiras e do futebol brasileiro. Sua construção, que custou cerca de R$ 630 milhões, foi resultado de uma parceria entre o clube e a WTorre, garantindo ao Palmeiras não apenas uma nova casa, mas também uma importante fonte de receitas.</p>
+    </section>
+
+    <section id="elenco">
+        <h1>Elenco Principal</h1>
+        <div class="player-grid">
+            <div class="player-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Weverton-Palmeiras-Athletico-jul-2022.jpg/716px-Weverton-Palmeiras-Athletico-jul-2022.jpg" alt="Weverton">
+                <div class="player-info">
+                    <h3>Weverton</h3>
+                    <p>Goleiro</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://conteudo.imguol.com.br/c/esporte/2b/2022/10/16/marcos-rocha-lateral-do-palmeiras-em-acao-na-partida-contra-o-sao-paulo-1665951363915_v2_450x600.jpg" alt="Marcos Rocha">
+                <div class="player-info">
+                    <h3>Marcos Rocha</h3>
+                    <p>Lateral-direito</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2020/03/gustavo-gomez.jpg" alt="Gustavo Gómez">
+                <div class="player-info">
+                    <h3>Gustavo Gómez</h3>
+                    <p>Zagueiro</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2022/01/oficial_2022_murilo.jpg" alt="Murilo">
+                <div class="player-info">
+                    <h3>Murilo</h3>
+                    <p>Zagueiro</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2021/07/oficial_2021_piquerez.jpg" alt="Piquerez">
+                <div class="player-info">
+                    <h3>Piquerez</h3>
+                    <p>Lateral-esquerdo</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2020/03/ze-rafael.jpg" alt="Zé Rafael">
+                <div class="player-info">
+                    <h3>Zé Rafael</h3>
+                    <p>Meio-campista</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://i.pinimg.com/736x/f9/fc/e6/f9fce6da7fdb441d73824eef62893b0a.jpg" alt="Richard Ríos">
+                <div class="player-info">
+                    <h3>Richard Ríos</h3>
+                    <p>Meio-campista</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2020/03/raphael-veiga.jpg" alt="Raphael Veiga">
+                <div class="player-info">
+                    <h3>Raphael Veiga</h3>
+                    <p>Meio-campista</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2024/02/oficial_2024_lazaro.jpg" alt="Lázaro">
+                <div class="player-info">
+                    <h3>Lázaro</h3>
+                    <p>Atacante</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2023/12/estevao_o.jpg" alt="Estêvão">
+                <div class="player-info">
+                    <h3>Estêvão</h3>
+                    <p>Atacante</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://conteudo.imguol.com.br/c/esporte/58/2023/01/28/endrick-em-acao-pelo-palmeiras-na-partida-contra-o-flamengo-valida-pela-supercopa-do-brasil-1674935962253_v2_450x600.jpg" alt="Endrick">
+                <div class="player-info">
+                    <h3>Endrick</h3>
+                    <p>Atacante</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2019/05/0024_Dudu.png" alt="Dudu">
+                <div class="player-info">
+                    <h3>Dudu</h3>
+                    <p>Atacante</p>
+                </div>
+            </div>
+            <div class="player-card">
+                <img src="https://www.verdazzo.com.br/wp-content/uploads/2024/01/moreno_o.jpg" alt="Aníbal Moreno">
+                <div class="player-info">
+                    <h3>Aníbal Moreno</h3>
+                    <p>Volante</p>
+                </div>
+            </div>
+        </div>
+        <p><strong>Escalação provável:</strong> Weverton, Marcos Rocha, Gustavo Gómez, Murilo e Piquerez; Zé Rafael, Aníbal Moreno e Raphael Veiga; Dudu, Estêvão e Endrick.</p>
+        <p><strong>Desfalques:</strong> Bruno Rodrigues (em recuperação de cirurgia no joelho)</p>
+    </section>
+
+    <section id="historia">
+        <h1>História do Palmeiras</h1>
+        <p>Fundado em 26 de agosto de 1914 por imigrantes italianos, o Palmeiras, originalmente chamado Palestra Italia, nasceu como um símbolo da comunidade italiana em São Paulo. Desde seus primórdios, o clube demonstrou sua força no cenário esportivo, conquistando rapidamente títulos importantes e estabelecendo-se como uma potência no futebol paulista.</p>
+        <p>Em 1942, durante a Segunda Guerra Mundial, o clube foi forçado a mudar seu nome para Sociedade Esportiva Palmeiras devido a proibições governamentais. Nesse mesmo ano, o Palmeiras conquistou o Campeonato Paulista em uma histórica "Arrancada Heroica", consolidando sua posição como um dos principais clubes do país.</p>
+        <p>Ao longo das décadas, o Palmeiras acumulou inúmeros títulos e glórias. A "Primeira Academia" dos anos 1960 e 1970, liderada por craques como Ademir da Guia, marcou uma era de ouro para o clube. Nos anos 1990, a parceria com a Parmalat trouxe uma nova onda de sucesso, com conquistas nacionais e internacionais, incluindo a Copa Libertadores.</p>
+        <p>Após enfrentar desafios no início dos anos 2000, o Palmeiras ressurgiu com força na década seguinte. A inauguração do Allianz Parque em 2014 marcou o início de uma nova era de modernização e profissionalismo. Nos últimos anos, o clube tem vivido uma fase de grandes conquistas, incluindo títulos do Campeonato Brasileiro, Copa do Brasil e Copa Libertadores.</p>
+        <p>Hoje, o Palmeiras se mantém como uma das principais potências do futebol brasileiro e sul-americano, continuando a escrever sua história de glórias e paixão.</p>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="btn-top">Voltar ao Topo</a>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
